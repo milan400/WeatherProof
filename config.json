@@ -1,0 +1,16 @@
+{
+  "upload_folder": "static/uploads",
+  "output_folder": "static/outputs",
+  "max_file_size": 500,
+  "allowed_extensions": ["mp4", "avi", "mov", "mkv"],
+  "img_size": 256,
+  "crf": 18,
+  "conf_thresh": 0.5,
+  "processing_order": ["delight", "dehaze", "desnow", "derain"],
+  "change_thresh": 0.35,
+  "force_vlm_interval_sec": 10.0,
+  "weight_dir": "weights",
+  "cidnet_path": "weights/LOLv2_real/w_perc.pth",
+  "max_concurrent_tasks": 3,
+  "task_timeout_minutes": 30
+}

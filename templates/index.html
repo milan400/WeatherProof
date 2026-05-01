@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Enhancement - Snow, Fog, Low-light, Rain</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌟 Video Enhancement System</h1>
+            <p>Remove snow, fog, low-light, and rain from your videos</p>
+        </header>
+
+        <main>
+            <!-- Upload Section -->
+            <section class="upload-section" id="uploadSection">
+                <div class="upload-area" id="dropZone">
+                    <div class="upload-content">
+                        <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        <p class="upload-text">Drag and drop your video here<br>or</p>
+                        <label class="upload-button">
+                            Choose Video
+                            <input type="file" id="videoInput" accept="video/*" hidden>
+                        </label>
+                        <p class="upload-info">Supported: MP4, AVI, MOV, MKV (Max 500MB)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Processing Section -->
+            <section class="processing-section" id="processingSection" style="display: none;">
+                <div class="progress-container">
+                    <h3>Processing Video...</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <p class="progress-text" id="progressText">Initializing...</p>
+                    <div class="progress-percentage" id="progressPercentage">0%</div>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section" id="resultsSection" style="display: none;">
+                <h2>Comparison: Original vs Enhanced</h2>
+                <div class="video-comparison">
+                    <div class="video-player original">
+                        <h3>🎥 Original Video</h3>
+                        <div class="video-container">
+                            <video id="originalVideo" controls loop playsinline>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="video-player enhanced">
+                        <h3>✨ Enhanced Video</h3>
+                        <div class="video-container">
+                            <video id="enhancedVideo" controls loop playsinline>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn btn-primary" id="downloadBtn">💾 Download Enhanced</button>
+                    <button class="btn btn-secondary" id="newVideoBtn">🔄 Process New Video</button>
+                </div>
+            </section>
+
+            <!-- Error Section -->
+            <section class="error-section" id="errorSection" style="display: none;">
+                <div class="error-message">
+                    <h3>❌ Error</h3>
+                    <p id="errorText"></p>
+                    <button class="btn btn-secondary" id="retryBtn">Try Again</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Powered by CIDNet & Attention UNet | Gemma4 VLM Detection</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
