@@ -65,7 +65,7 @@ Smart Detection: VLM is not called on every frame. A fast histogram comparison r
 
  Vision Intelligence   → Gemma 4 (E2B)  
  Low‑light Enhancement  → CIDNet (PyTorch)  
- Weather Removal        → Attention UNet (TensorFlow)  
+ Rain, Snow, Fog Removal        → Attention UNet (TensorFlow)  
  Runtime                → Ollama  
  Interface              → Flask + HTML/CSS/JS  
 
