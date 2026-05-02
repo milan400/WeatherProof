@@ -4,6 +4,7 @@ Real‑time video enhancement that removes snow, rain, fog, haze and low‑light
 
 ## Project Structure
 
+```
 weatherproof/
 ├── app.py
 ├── processing.py
@@ -13,20 +14,21 @@ weatherproof/
 ├── ffmpeg.exe
 ├── ffprobe.exe
 ├── templates/
-│ └── index.html
+│   └── index.html
 ├── static/
-│ ├── css/
-│ │ └── style.css
-│ ├── js/
-│ │ └── main.js
-│ ├── uploads/
-│ └── outputs/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── main.js
+│   ├── uploads/
+│   └── outputs/
 └── weights/
-├── LOLv2_real/
-│ └── w_perc.pth
-├── dehaze.keras
-├── desnow.keras
-└── derain.keras
+    ├── LOLv2_real/
+    │   └── w_perc.pth
+    ├── dehaze.keras
+    ├── desnow.keras
+    └── derain.keras
+```
 
 ## How It Works
 
