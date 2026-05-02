@@ -2,6 +2,14 @@
 
 Real‑time video enhancement that removes snow, rain, fog, haze and low‑light — powered by Google Gemma 4 Multimodal VLM, running entirely on edge devices.
 
+## Where It's Useful
+
+- **Autonomous Vehicles** – Reliable vision in rain, snow, and fog for safer navigation
+- **Drones** – Clear aerial footage in harsh weather for delivery, inspection, and surveillance
+- **Security Cameras** – Consistent surveillance even in low‑light or stormy conditions
+- **Content Creators** – Clean up outdoor videos without expensive equipment
+- **Search & Rescue** – Enhanced visibility in fog, rain, or dark environments
+
 ## Project Structure
 
 ```
