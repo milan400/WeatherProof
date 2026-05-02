@@ -27,7 +27,6 @@ weatherproof/
     ├── dehaze.keras
     ├── desnow.keras
     └── derain.keras
-
 ## How It Works
 
 Input Video → Gemma 4 (detection) → CIDNet / Attention UNet (restoration) → Enhanced Video
