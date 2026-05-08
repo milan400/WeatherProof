@@ -581,12 +581,15 @@ def query_gpt_llava(image_input):
         temp_file = temp_path
 
         prompt = (
-            "<start_of_turn>user\n"
+            "<|turn>user\n"
             "You are a degradation classifier for autonomous driving cameras.\n"
+            "Analyze this image: <|image|>\n" 
             "List ALL visual degradations present.\n"
             "Valid labels: ['rain', 'snow', 'haze', 'fog', 'low_light', 'clean'].\n"
             "Respond ONLY with JSON: {\"degradations\": [\"<label1>\", \"<label2>\"], \"confidences\": [<0-1>, <0-1>]}\n"
-            "<start_of_turn>model\n"
+            "<turn|>\n" 
+            "<|turn>model\n"
+            "{"
         )
         
         # 🔑 SAME AS KAGGLE - Let Ollama decide GPU/CPU
