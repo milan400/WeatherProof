@@ -46,8 +46,8 @@ Smart Detection: VLM is not called on every frame. A fast histogram comparison r
 
 ## Prerequisites
 
-- **Python 3.10** (Highly recommended to ensure model framework compatibility)
-- **Ollama** installed on your system
+- **Python 3.10** (Highly recommended)
+- **Ollama**
 
 ## Quick Setup
 
