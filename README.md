@@ -44,6 +44,11 @@ Input Video → Gemma 4 (detection) → CIDNet / Attention UNet (restoration) �
 
 Smart Detection: VLM is not called on every frame. A fast histogram comparison reuses the previous plan until the scene changes. A safety check forces a fresh VLM call every 10 seconds.
 
+## Prerequisites
+
+- **Python 3.10** (Highly recommended to ensure model framework compatibility)
+- **Ollama** installed on your system
+
 ## Quick Setup
 
 1. Install dependencies  
